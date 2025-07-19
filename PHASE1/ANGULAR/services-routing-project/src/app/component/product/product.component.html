@@ -1,0 +1,15 @@
+
+<h1>This is a PRODUCT</h1>
+
+<div class="product-card">
+    <img [src]="product.imagePath" alt="{{ product.imagePath }}" class="product-image" width="150" height="150"/>
+    <div class="product-info">
+      <h2 class="product-name box">{{ product.name }}</h2>
+      <p class="product-description">{{ product.description }}</p>
+      <p class="product-price">${{ product.price }}</p>
+      <b [style.color]="product.inStock ? 'green' : 'red'">
+         {{ product.inStock ?'In Stock':'Out of Stock'}}
+      </b>     
+    </div>
+  </div>
+  

@@ -1,0 +1,14 @@
+
+<h1 style="text-align:center">Welcome to Amazon.com</h1>
+
+
+<product-list></product-list>
+
+<hr><br>
+<product name="Nokia" [price]="500" description="basic phone" [inStock]="true" (myEvent)="parentFunc($event)"></product>
+
+<product name="Motorola" [price]="200" description="elite phone" [inStock]="false" ></product>
+
+<product name="Samsung" [price]="1500" description="nice phone" [inStock]="true" ></product>
+
+<product name="iPhone" [price]="2000" description="great phone" [inStock]="false" (myEvent)="parentFunc($event)"></product> 

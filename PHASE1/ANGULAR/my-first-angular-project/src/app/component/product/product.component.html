@@ -1,0 +1,19 @@
+
+
+<div class="product-card">
+    <img [src]="product.imagePath" alt="{{ product.imagePath }}" class="product-image" />
+    <div class="product-info">
+      <h2 class="product-name box">{{ product.name }}</h2>
+      <p class="product-description">{{ product.description }}</p>
+      <p class="product-price">\${{ product.price }}</p>
+      <p class="product-stock" >
+        {{ product.inStock ? 'In Stock' : 'Out of Stock' }}
+      </p>
+      <button (click)="f1()">Click me to call f1()</button>
+      <button (click)="increasePrice()">INCREASE PRICE </button>
+      <br><br>
+      <button (click)="generateMyEvent(150)">CLICK ME TO generate a myEvent event with 150 as data</button>
+      <button (click)="generateMyEvent(255)">CLICK ME TO generate a myEvent event with 250 as data</button>
+    </div>
+  </div>
+  
